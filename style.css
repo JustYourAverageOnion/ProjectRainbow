@@ -1,0 +1,226 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+}
+
+.color-salmon {
+  background-image: linear-gradient(transparent 0% 50%, rgba(255, 154, 162, 0.8) 50%);
+  background-size: 100% 100%;
+}
+
+.color-salmon:hover {
+  background-image: linear-gradient(transparent 0%, rgba(255, 154, 162, 0.8) 0%);
+  background-size: 100% 100%;
+}
+
+.color-melon {
+  background-image: linear-gradient(transparent 0% 50%, rgba(255, 183, 178, 0.8) 50%);
+  background-size: 100% 100%;
+}
+
+.color-melon:hover {
+  background-image: linear-gradient(transparent 0%, rgba(255, 183, 178, 0.8) 0%);
+  background-size: 100% 100%;
+}
+
+.color-orange {
+  background-image: linear-gradient(transparent 0% 50%, rgba(255, 218, 193, 0.8) 50%);
+  background-size: 100% 100%;
+}
+
+.color-orange:hover {
+  background-image: linear-gradient(transparent 0%, rgba(255, 218, 193, 0.8) 0%);
+  background-size: 100% 100%;
+}
+
+.color-tea {
+  background-image: linear-gradient(transparent 0% 50%, rgba(255, 218, 193, 0.8) 50%);
+  background-size: 100% 100%;
+}
+
+.color-tea:hover {
+  background-image: linear-gradient(transparent 0%, rgba(255, 218, 193, 0.8) 0%);
+  background-size: 100% 100%;
+}
+
+.color-mint {
+  background-image: linear-gradient(transparent 0% 50%, rgba(181, 234, 215, 0.8) 50%);
+  background-size: 100% 100%;
+}
+
+.color-mint:hover {
+  background-image: linear-gradient(transparent 0%, rgba(181, 234, 215, 0.8) 0%);
+  background-size: 100% 100%;
+}
+
+.color-periwinkle {
+  background-image: linear-gradient(transparent 0% 50%, rgba(192, 194, 226, 0.8) 50%);
+  background-size: 100% 100%;
+}
+
+.color-periwinkle:hover {
+  background-image: linear-gradient(transparent 0%, rgba(192, 194, 226, 0.8) 0%);
+  background-size: 100% 100%;
+}
+
+.color-peach {
+  background-image: linear-gradient(transparent 0% 50%, rgba(252, 218, 190, 0.8) 50%);
+  background-size: 100% 100%;
+}
+
+.color-peach:hover {
+  background-image: linear-gradient(transparent 0%, rgba(252, 218, 190, 0.8) 0%);
+  background-size: 100% 100%;
+}
+
+.color-pink {
+  background-image: linear-gradient(transparent 0% 50%, rgba(242, 199, 204, 0.8) 50%);
+  background-size: 100% 100%;
+}
+
+.color-pink:hover {
+  background-image: linear-gradient(transparent 0%, rgba(242, 199, 204, 0.8) 0%);
+  background-size: 100% 100%;
+}
+
+.color-diamond {
+  background-image: linear-gradient(transparent 0% 50%, rgba(194, 231, 241, 0.8) 50%);
+  background-size: 100% 100%;
+}
+
+.color-diamond:hover {
+  background-image: linear-gradient(transparent 0%, rgba(194, 231, 241, 0.8) 0%);
+  background-size: 100% 100%;
+}
+
+.color-yellow {
+  background-image: linear-gradient(transparent 0% 50%, rgba(243, 251, 210, 0.8) 50%);
+  background-size: 100% 100%;
+}
+
+.color-yellow:hover {
+  background-image: linear-gradient(transparent 0%, rgba(243, 251, 210, 0.8) 0%);
+  background-size: 100% 100%;
+}
+
+h1,
+li,
+.tooltip .tooltiptext {
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+.grid {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+  animation: rainbow 18s ease-in-out infinite;
+}
+
+.grid__item {
+  height: 50px;
+  width: 50px;
+  opacity: 0;
+  transition: opacity 2s ease 0.4s;
+}
+
+.grid__item:hover {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+.content {
+  width: 55vmin;
+  height: 90vmin;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5em;
+}
+.content h1 {
+  font-size: 5vmin;
+  padding: 3.5vmin 0;
+  text-decoration: underline wavy #ff9aa2;
+  text-align: center;
+}
+.content ul {
+  padding: 0 1vmin;
+}
+.content li {
+  font-size: 2.75vmin;
+  padding-bottom: 2vmin;
+}
+.content li span.time,
+.content li span.times,
+.content li span.timer {
+  font-weight: bold;
+  width: 13.75vmin;
+  display: inline-block;
+  text-align: right;
+}
+.content li span.time:after {
+  content: " 🕰️ ";
+  text-decoration: none !important;
+}
+.content li span.times:after {
+  content: " 🔄 ";
+  text-decoration: none !important;
+}
+.content li span.timer:after {
+  content: " ⏰ ";
+  text-decoration: none !important;
+}
+.content h3 {
+  font-size: 5.5vmin;
+  text-align: center;
+  width: 5.5vmin;
+  height: 5.5vmin;
+  margin: 0 auto;
+}
+.content .tooltip .tooltiptext {
+  font-size: 2.75vmin;
+  visibility: hidden;
+  width: 55vmin;
+  background-color: #f2c7cc;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, -200%);
+}
+.content .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.card {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
